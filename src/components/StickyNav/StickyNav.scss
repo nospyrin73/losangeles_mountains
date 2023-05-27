@@ -1,0 +1,16 @@
+.StickyNav {
+    align-self: flex-end;
+    align-items: center;
+    background-color: #FFF;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 320px;
+    position: sticky;
+    width: 100vw;
+    z-index: 3;
+
+    & > .menu {
+        color: var(--color-primary);
+    }
+}

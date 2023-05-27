@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url(./fonts/Bebas-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 300;
+    src: url(./fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: italic;
+    src: url(./fonts/Lato-BlackItalic.ttf);
+}
+
+:root {
+    --color-primary: rgb(65, 79, 107);
+    --color-dark: rgb(77, 77, 77);
+}
+
+.logo {
+    height: 43px;
+    width: 43px;
+}

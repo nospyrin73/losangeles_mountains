@@ -1,0 +1,53 @@
+.landing {
+    background: url(images/hero_background.png) 80% 0 / 158em;
+    display: flex;
+    height: 912px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 320px;
+        position: absolute;
+        width: 100vw;
+
+        & > .logo {
+            margin-top: 7px;
+        }
+
+        & > .menu {
+            margin-top: 25px
+        }
+    }
+
+    &__text {
+        font-family: 'Bebas';
+        font-size: 160px;
+        left: 25.5%;
+        line-height: 122px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 14%;
+        z-index: 1;
+
+        & > :first-child {
+            color: var(--color-dark);
+            letter-spacing: -0.035em;
+        }
+
+        & > :last-child {
+            background: linear-gradient(var(--color-primary), #333E53);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: var(--color-primary);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__foreground {
+        background: url(images/mountains_foreground.png) 80% 0 / 158em;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,26 @@
+.menu {
+    display: flex;
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 900;
+    gap: 49px;
+    height: fit-content;
+    list-style-position: inside;
+    list-style-type: decimal-leading-zero;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+
+    &__item {
+        border-bottom: 2px solid currentColor;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 600;
+        padding-bottom: 4px;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
