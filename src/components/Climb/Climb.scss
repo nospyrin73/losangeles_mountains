@@ -1,0 +1,110 @@
+.climb {
+    &__header {
+        align-items: center;
+        background-color: #FFF;
+        display: flex;
+        padding-inline: 320px;
+
+        .marked {
+            margin-inline-start: 43px;
+
+            &__title {
+                left: 150px;
+            }
+        }
+    }
+
+    &__body-text {
+        color: rgb(21, 24, 27);
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 300;
+        margin-inline-start: 80px;
+        width: 600px;
+    }
+
+    &__mountains {
+    }
+
+    &__navigation {
+        background-color: rgb(var(--color-primary));
+        display: flex;
+        height: 40px;
+        margin: unset;
+        padding-inline: 320px;
+
+        dt {
+            color: rgba(#FFF, 0.5);
+            font-family: Oswald;
+            font-size: 20px;
+            font-weight: 700;
+            height: 100%;
+            line-height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 140px;
+
+            &.active {
+                background-color: rgba(#FFF, 0.5);
+                color: rgb(var(--color-primary));
+                text-decoration: underline;
+            }
+
+            &:hover {
+                cursor: pointer
+            }
+        }
+    }
+
+    &__content {
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+        height: 546px;
+        left: 0;
+        margin: unset;
+        position: absolute;
+        top: 40px;
+        width: 100vw;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__schedule {
+        background-color: rgba(#FFF, 0.7);
+        height: 229px;
+        padding: 21px 39px 27px;
+        margin: 100px 350px;
+        width: fit-content;
+
+        h2 {
+            color: rgb(var(--color-primary));
+            font-family: Oswald;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        ul {
+            color: #414243;
+            font-family: Lato;
+            margin-block-start: 10px;
+
+            li {
+                display: flex;
+                gap: 59px;
+                margin-block-end: 10px;
+
+                span:first-child {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    &__dummy {
+        height: 546px;
+    }
+}

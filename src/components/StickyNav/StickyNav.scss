@@ -1,5 +1,4 @@
-.StickyNav {
-    align-self: flex-end;
+.sticky-nav {
     align-items: center;
     background-color: #FFF;
     top: 0;
@@ -11,6 +10,6 @@
     z-index: 3;
 
     & > .menu {
-        color: var(--color-primary);
+        color: rgb(var(--color-primary));
     }
 }

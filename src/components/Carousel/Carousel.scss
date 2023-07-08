@@ -1,0 +1,48 @@
+.carousel {
+    margin-block-start: 25px;
+    overflow: hidden;
+
+    &__slider {
+        align-items: center;
+        display: flex;
+        gap: var(--gap);
+        transition: transform 1s cubic-bezier( 0.6, 0.18, 0.18, 0.94 ) ;
+        width: calc(
+            (var(--item-width) * var(--visible-items))
+            +
+            (var(--gap) * (var(--visible-items) - 1))
+        );
+    }
+
+    &__slide {
+        img {
+            height: 135px;
+            width: var(--item-width);
+        }
+    }
+
+    &__dots {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+        margin-block-start: 11px;
+        padding: unset;
+
+        li {
+            background-color: #FFF;
+            border-radius: 100%;
+            height: 9px;
+            list-style-type: none;
+            opacity: .2;
+            width: 9px;
+
+            &.active {
+                opacity: 1;
+            }
+
+            &:hover:not(.active) {
+                cursor: pointer;
+            }
+        }
+    }
+}

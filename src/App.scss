@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url(./fonts/Bebas-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 300;
+    src: url(./fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: italic;
+    src: url(./fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 700;
+    src: url(./fonts/Oswald-Bold.ttf);
+}
+
+:root {
+    --color-primary: 65, 79, 107;
+    --color-dark: rgb(77, 77, 77);
+}
+
+.logo {
+    height: 43px;
+    width: 43px;
+}
+
+.marked {
+    &__number {
+        color: rgba(var(--color-primary), 0.5);
+        font-family: 'Oswald';
+        font-size: 136px;
+        font-weight: 700;
+    }
+
+    &__title {
+        bottom: 60px;
+        color: rgb(var(--color-primary));
+        font-family: 'Oswald';
+        font-size: 32px;
+        font-weight: 700;
+        left: 132px;
+        position: absolute;
+        text-transform: uppercase;
+    }
+}

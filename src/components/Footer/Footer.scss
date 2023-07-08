@@ -1,0 +1,14 @@
+.footer {
+    align-items: center;
+    background-color: rgb(var(--color-primary));
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 320px;
+
+    &__copyright {
+        font-family: Lato;
+        font-size: 12px;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+}

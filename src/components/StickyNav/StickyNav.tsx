@@ -1,12 +1,13 @@
 import { ReactElement } from 'react';
+import { Menu } from '../Menu/Menu';
 
 import './StickyNav.scss';
-import { Menu } from '../Menu/Menu';
+import { Logo } from '../Logo/Logo';
 
 export function StickyNav(): ReactElement {
     return (
-        <div className="StickyNav">
-            <img src="./images/logo.svg" className="logo" />
+        <div className="sticky-nav">
+            <Logo />
             <Menu />
         </div>
     );

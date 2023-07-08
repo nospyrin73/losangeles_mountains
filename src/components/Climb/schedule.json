@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Mountain 1",
+        "image": "images/mountain_1.png",
+        "content": [
+            { "date": "25 Nov 2016", "name": "Vestibulum viverra" },
+            { "date": "28 Nov 2016", "name": "Vestibulum viverra" },
+            { "date": "18 Dec 2016", "name": "Vestibulum viverra" },
+            { "date": "7 Jan 2017", "name": "Vestibulum viverra" }
+        ]
+    },
+    {
+        "title": "Mountain 2",
+        "image": "images/mountain_2.png",
+        "content": [
+            { "date": "17 Nov 2016", "name": "Vestibulum viverra" },
+            { "date": "13 Dec 2016", "name": "Vestibulum viverra" },
+            { "date": "28 Dec 2016", "name": "Vestibulum viverra" },
+            { "date": "9 Feb 2017", "name": "Vestibulum viverra" }
+        ]
+    }
+]

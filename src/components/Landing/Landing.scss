@@ -1,5 +1,6 @@
 .landing {
-    background: url(images/hero_background.png) 80% 0 / 158em;
+    background: url(images/hero_background.png) no-repeat;
+    background-size: cover;
     display: flex;
     height: 912px;
 
@@ -35,16 +36,15 @@
         }
 
         & > :last-child {
-            background: linear-gradient(var(--color-primary), #333E53);
+            background: linear-gradient(rgb(var(--color-primary)), #333E53);
             background-clip: text;
             -webkit-background-clip: text;
-            color: var(--color-primary);
+            color: rgb(var(--color-primary));
             -webkit-text-fill-color: transparent;
         }
     }
 
     &__foreground {
-        background: url(images/mountains_foreground.png) 80% 0 / 158em;
         height: 100%;
         position: absolute;
         width: 100%;
