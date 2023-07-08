@@ -7,7 +7,7 @@ import './History.scss';
 
 export function History(): ReactElement {
     return (
-        <div className="history">
+        <div className="history" id="history">
             <article className="history__statement">
                 <div className="marked">
                     <span className="marked__number">01.</span>

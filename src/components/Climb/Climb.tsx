@@ -8,7 +8,7 @@ export function Climb(): ReactElement {
     const [active, setActive] = useState(0);
 
     return (
-        <section className="climb">
+        <section className="climb" id="mountains">
             <header className="climb__header">
                 <div className="marked">
                     <span className="marked__number">02.</span>
