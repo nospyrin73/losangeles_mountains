@@ -108,3 +108,31 @@
         height: 546px;
     }
 }
+
+@media (max-width: 1200px) {
+    .climb {
+        &__header {
+            padding-inline: 150px;
+        }
+    }
+}
+
+@media (max-width: 804px) {
+    .climb {
+        &__header {
+            padding-inline: 50px;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .climb {
+        &__header {
+            padding-inline: 20px;
+
+            .marked {
+                margin: unset;
+            }
+        }
+    }
+}

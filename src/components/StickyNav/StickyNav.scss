@@ -9,6 +9,18 @@
     width: 100vw;
     z-index: 3;
 
+    @media (max-width: 1024px) {
+        padding-inline: 130px;
+    }
+
+    @media (max-width: 570px) {
+        padding-inline: 70px;
+    }
+
+    @media (max-width: 440px) {
+        padding-inline: 30px;
+    }
+
     & > .menu {
         color: rgb(var(--color-primary));
     }

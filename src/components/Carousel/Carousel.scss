@@ -1,17 +1,18 @@
 .carousel {
     margin-block-start: 25px;
+    margin-inline: auto;
     overflow: hidden;
+    width: calc(
+        (var(--item-width) * var(--visible-items))
+        +
+        (var(--gap) * (var(--visible-items) - 1))
+    );
 
     &__slider {
         align-items: center;
         display: flex;
         gap: var(--gap);
         transition: transform 1s cubic-bezier( 0.6, 0.18, 0.18, 0.94 ) ;
-        width: calc(
-            (var(--item-width) * var(--visible-items))
-            +
-            (var(--gap) * (var(--visible-items) - 1))
-        );
     }
 
     &__slide {
