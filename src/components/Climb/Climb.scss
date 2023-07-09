@@ -24,9 +24,6 @@
     }
 
     &__mountains {
-    }
-
-    &__navigation {
         background-color: rgb(var(--color-primary));
         display: flex;
         height: 40px;
@@ -111,28 +108,68 @@
 
 @media (max-width: 1200px) {
     .climb {
-        &__header {
+        &__header, &__mountains {
             padding-inline: 150px;
+        }
+
+        &__schedule {
+            height: 300px;
+            margin-inline: 178px;
         }
     }
 }
 
 @media (max-width: 804px) {
     .climb {
-        &__header {
+        &__header, &__mountains {
             padding-inline: 50px;
+        }
+
+        &__schedule {
+            height: 300px;
+            margin: 74px 84px;
         }
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
     .climb {
-        &__header {
-            padding-inline: 20px;
+        &__mountains {
+            display: flex;
+            flex-direction: column;
+            height: unset;
+            padding: unset;
 
-            .marked {
-                margin: unset;
+            dt {
+                width: 100%;
             }
+        }
+
+        &__content {
+            display: block;
+            height: 0;
+            position: relative;
+            top: unset;
+            transition: height 1s;
+
+            &.active {
+                height: 546px;
+
+                .climb__schedule {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__dummy {
+            display: none;
+        }
+
+        &__schedule {
+            display: none;
+            margin-inline: auto;
+            opacity: 0;
         }
     }
 }

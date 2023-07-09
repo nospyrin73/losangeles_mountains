@@ -18,8 +18,7 @@ export function Climb(): ReactElement {
                     Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
                 </p>
             </header>
-            <div className='climb__mountains'>
-                <dl className="climb__navigation">
+                <dl className="climb__mountains">
                     { schedule.map(({ title, image, content }, i) => (
                         <Fragment key={ i }>
                             <dt
@@ -49,7 +48,6 @@ export function Climb(): ReactElement {
                     )) }
                 </dl>
                 <div className="climb__dummy"></div>
-            </div>
         </section>
     );
 }
